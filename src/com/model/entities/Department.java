@@ -74,7 +74,7 @@ public class Department implements Serializable, IOperationDao {
 	@Override
 	public void insert(Object obj) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Metodo Insert testado com sucesso!!");
 	}
 
 	@Override
