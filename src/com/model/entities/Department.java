@@ -1,8 +1,11 @@
 package com.model.entities;
 
 import java.io.Serializable;
+import java.util.List;
 
-public class Department implements Serializable {
+import com.model.dao.IOperationDao;
+
+public class Department implements Serializable, IOperationDao {
 
 	private static final long serialVersionUID = 1L;
 
@@ -68,4 +71,36 @@ public class Department implements Serializable {
 		return sb.toString();
 	}
 
+	@Override
+	public void insert(Object obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Object obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Object> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
 }
