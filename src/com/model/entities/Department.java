@@ -1,18 +1,24 @@
 package com.model.entities;
 
 import java.io.Serializable;
+import java.sql.Connection;
 import java.util.List;
 
 import com.model.dao.IOperationDao;
+import com.model.db.DB;
 
 public class Department implements Serializable, IOperationDao {
 
 	private static final long serialVersionUID = 1L;
 
+	private Connection conn = null;
+	
 	private Integer id;
 	private String name;
 
 	public Department() {
+		
+		conn = DB.getConnection();
 	}
 
 	public Department(Integer id, String name) {
